@@ -12,7 +12,7 @@ $DB_CONFIG = [
   'port' => 3306,
   'username' => "root",
   'password' => "",
-  'database' => "szivarvanyovi",
+  'database' => "pizzapapa",
 ];
 
 $PAGES = [
