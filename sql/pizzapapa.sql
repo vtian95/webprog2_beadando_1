@@ -12,10 +12,10 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 --
--- Adatbázis: `szivarvanyovi`
+-- Adatbázis: `pizzapapa`
 --
-CREATE DATABASE IF NOT EXISTS `szivarvanyovi` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `szivarvanyovi`;
+CREATE DATABASE IF NOT EXISTS `pizzapapa` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `pizzapapa`;
 
 -- --------------------------------------------------------
 
