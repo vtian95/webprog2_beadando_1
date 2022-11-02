@@ -2,17 +2,12 @@
 
 $UPLOAD_DIR = 'uploads';
 
-$MAP_COORDINATES = [
-  'lat' => '46.896386',
-  'lng' => '19.668818',
-];
-
 $DB_CONFIG = [
-  'host' => "localhost",
+  'host' => "mysql.omega",
   'port' => 3306,
-  'username' => "root",
-  'password' => "",
-  'database' => "szivarvanyovi",
+  'username' => "pizzapapa1",
+  'password' => "Pizzapapa492600",
+  'database' => "pizzapapa1",
 ];
 
 $PAGES = [

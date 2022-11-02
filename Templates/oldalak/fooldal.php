@@ -48,7 +48,7 @@
 <div class="jumbotron text-center">
   <h1>Pizza Papa</h1> 
   <p>A pizza nekünk örök! De inkább kóstolják meg Önök!</p>
-  <p><img src="./Galéria/pidza.PNG" alt="pidza" ></p>
+  <p><img src="./Galéria/pidza.png" alt="pidza" ></p>
 
  <div class="container-kozel text-center">
   <h2>AMIT A LEGFONTOSABBNAK TARTUNK</h2>
