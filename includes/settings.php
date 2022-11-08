@@ -3,11 +3,11 @@
 $UPLOAD_DIR = 'uploads';
 
 $DB_CONFIG = [
-  'host' => "mysql.omega",
+  'host' => "localhost",
   'port' => 3306,
-  'username' => "pizzapapa1",
-  'password' => "Pizzapapa492600",
-  'database' => "pizzapapa1",
+  'username' => "root",
+  'password' => "",
+  'database' => "pizzapapa",
 ];
 
 $PAGES = [
@@ -15,21 +15,21 @@ $PAGES = [
     'template' => 'fooldal.php',
     'name' => 'Főoldal',
   ],
-  'galeria' => [
-    'template' => 'galeria.php',
-    'name' => 'Galéria',
+  'hirek' => [
+    'template' => 'hirek.php',
+    'name' => 'Hírek',
   ],
-  'uzenetek' => [
-    'template' => 'uzenetek.php',
-    'name' => 'Üzenetek',
-  ],
-  'kapcsolat' => [
-    'template' => 'kapcsolat.php',
-    'name' => 'Kapcsolat',
+  'rendeles' => [
+    'template' => 'rendeles.php',
+    'name' => 'Rendelés',
   ],
   'belepes' => [
     'template' => 'belepes.php',
     'name' => 'Belépés',
+  ],
+  'mnb' => [
+    'template' => 'mnb.php',
+    'name' => 'MNB napi árfolyam',
   ],
   'kilepes' => [
     'template' => 'kilepes.php',
