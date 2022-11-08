@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap-env="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://localhost/szerver/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/szerver/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://localhost/szerver/"/>
+  </wsdl:types>
+  <wsdl:portType name="PizzakPortType"/>
+  <wsdl:binding name="PizzakBinding" type="tns:PizzakPortType">
+    <soap-env:binding xmlns="http://schemas.xmlsoap.org/wsdl/soap/" style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  </wsdl:binding>
+  <wsdl:service name="Pizzak">
+    <wsdl:documentation/>
+    <wsdl:port name="PizzakPort" binding="tns:PizzakBinding">
+      <soap-env:address location="http://localhost/szerver/szerver.php"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
