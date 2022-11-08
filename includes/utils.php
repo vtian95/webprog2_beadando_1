@@ -85,7 +85,7 @@ function send_message($message) {
 
   $query = "INSERT INTO `uzenetek` (`uzenet`,`nev`) VALUES ('{$message}', '{$name}')";
   $db_connection->query($query);
-  flash_message("Üzenetét sikeresen elküldte.");
+  flash_message("Az Ön által írt hír sikeresen közzétéve.");
 }
 
 function get_messages() {
@@ -115,30 +115,6 @@ function get_flash_messages() {
     return $flash_messages;
   }
   return [];
-}
-
-function upload_file($file) {
-  global $UPLOAD_DIR;
-  if (!file_exists($UPLOAD_DIR)) {
-    mkdir($UPLOAD_DIR);
-  }
-  $upload_dir = $UPLOAD_DIR . '/';
-  $file_name = $file["name"];
-  $file_path = $upload_dir . basename($file_name);
-  $result = move_uploaded_file($file["tmp_name"], $file_path);
-  if ($result) {
-    flash_message("A(z) {$file_name} feltöltése sikerült.");
-  } else {
-    flash_message("A(z) {$file_name} feltöltése sikertelen. Próbálja újra!", 'danger');
-  }
-}
-
-function get_uploaded_filenames() {
-  global $UPLOAD_DIR;
-  if (!file_exists($UPLOAD_DIR)) {
-    return [];
-  }
-  return array_diff(scandir($UPLOAD_DIR), ['..', '.']);
 }
 
 function dump($data) {
