@@ -19,9 +19,9 @@ $PAGES = [
     'template' => 'hirek.php',
     'name' => 'Hírek',
   ],
-  'rendeles' => [
-    'template' => 'rendeles.php',
-    'name' => 'Rendelés',
+  'pizzaink' => [
+    'template' => 'pizzaink.php',
+    'name' => 'Pizzáink',
   ],
   'belepes' => [
     'template' => 'belepes.php',
