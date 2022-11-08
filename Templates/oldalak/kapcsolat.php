@@ -1,5 +1,5 @@
 <?php
-$max_character_count = 250;
+$max_character_count = 2000;
 
 if ($_POST) {
   $message = $_POST['uzenet'];
