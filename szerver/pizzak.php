@@ -49,7 +49,7 @@ class Rendeles {
 	  $sth->execute(array());
 	  $eredmeny['kategoriak'] = $sth->fetchAll(PDO::FETCH_ASSOC);
   
-	  $sql = "select nev from pizza where kategorianev = :katagorianev";
+	  $sql = "select nev from pizza where kategorianev = :kategoriak";
 	  $sth = $dbh->prepare($sql);
 	  $sth->execute(array(":kategorianev" => $kategoriak));
 	  $eredmeny['pizzak'] = $sth->fetchAll(PDO::FETCH_ASSOC);

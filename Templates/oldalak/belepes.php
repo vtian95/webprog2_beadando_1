@@ -13,6 +13,7 @@ if ($_POST) {
 	  redirect('fooldal');
   }
 
+  
 }
 ?>
 
